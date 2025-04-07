@@ -12,8 +12,6 @@
 # Remove bundled libraries from requirements/provides
 %global __requires_exclude ^(libffmpeg\\.so.*|libEGL\\.so.*|libGLESv2\\.so.*|libvk_swiftshader\\.so.*|libvulkan\\.so.*|/usr/bin/node)$
 %global __provides_exclude ^(libffmpeg\\.so.*|libEGL\\.so.*|libGLESv2\\.so.*|libvk_swiftshader\\.so.*|libvulkan\\.so.*|/usr/bin/node)$
-%global __requires_exclude_from ^%{_libdir}/%{name}/resources/app.asar.unpacked/.*$
-%global __provides_exclude_from ^%{_libdir}/%{name}/resources/app.asar.unpacked/.*$
 
 Name:       cursor
 Version:    0.48.7
@@ -23,9 +21,7 @@ License:    Proprietary
 URL:        https://www.cursor.com/
 
 Source0:    https://downloads.cursor.com/production/%{dl_hash}/linux/x64/Cursor-%{version}-x86_64.AppImage
-NoSource:   0
 Source1:    https://downloads.cursor.com/production/%{dl_hash}/linux/arm64/Cursor-%{version}-aarch64.AppImage
-NoSource:   1
 Source2:    %{name}-wrapper
 Source3:    %{desktop_id}.appdata.xml
 
