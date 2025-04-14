@@ -14,7 +14,7 @@
 %global __provides_exclude ^(libffmpeg\\.so.*|libEGL\\.so.*|libGLESv2\\.so.*|libvk_swiftshader\\.so.*|libvulkan\\.so.*|/usr/bin/node)$
 
 Name:       cursor
-Version:    0.48.7
+Version:    0.48.9
 Release:    1%{?dist}
 Summary:    AI-first coding environment
 License:    Proprietary
@@ -95,5 +95,8 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{desktop_id}.
 %{zsh_completions_dir}/_%{name}
 
 %changelog
+* Mon Apr 14 2025 Simone Caronni <negativo17@gmail.com> - 0.48.9-1
+- Update to version 0.48.9.
+
 * Mon Apr 07 2025 Simone Caronni <negativo17@gmailc.om> - 0.48.7-1
 - First build.
