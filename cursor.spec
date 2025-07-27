@@ -1,6 +1,6 @@
 # Download URL, version and hash from:
 # https://github.com/oslook/cursor-ai-downloads/blob/main/version-history.json
-%global dl_hash 410000a83355c025daba0c6156955bf08687d081
+%global dl_hash e589175333a2d938c3d944f9bf0993155e655e7f
 
 %global desktop_id co.anysphere.cursor
 
@@ -14,7 +14,7 @@
 %global __provides_exclude ^(libffmpeg\\.so.*|libEGL\\.so.*|libGLESv2\\.so.*|libvk_swiftshader\\.so.*|libvulkan\\.so.*|/usr/bin/node)$
 
 Name:       cursor
-Version:    1.3.0
+Version:    1.3.3
 Release:    1%{?dist}
 Summary:    AI-first coding environment
 License:    Proprietary
@@ -95,6 +95,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{desktop_id}.
 %{zsh_completions_dir}/_%{name}
 
 %changelog
+* Sun Jul 27 2025 Simone Caronni <negativo17@gmail.com> - 1.3.3-1
+- Update to version 1.3.3.
+
 * Thu Jul 24 2025 Simone Caronni <negativo17@gmail.com> - 1.3.0-1
 - Update to version 1.3.0.
 
